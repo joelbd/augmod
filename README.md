@@ -1,11 +1,12 @@
-# ASTR 302, Winter 2018, Final:
-# Joel Day
+# AuGMod
 
-Automated Galactic Modeling (AuGMod) is a python package that brings together different tools used for detecting and modeling galaxies.
+This notebook tests the functionality and features of the augmod.py file. This package includes the methods:
+- cutOut : make a postage stamp size cutout centered at given coordinates
+- bulkCutOut : cutOut but run over a list of coordinates given on a text file
+- getPixelMask : create a pixel mask to exclude pixels whose values exceed the given level
+- galfit : Create a multiextension fits file containing:
+  - Original image
+  - Model
+  - Residual image
 
-It will include:
-  - Automated cropping given coordinates
-    - Initially this will be XY coordinates only but will be expanded to accept any coordinates available in the image.
-  - Galfit processing
-  - All results will be inserted into an dataframe and entered into an SQL database if directed by the user
-
+For more information on using galfit see [here](https://users.obs.carnegiescience.edu/peng/work/galfit/README.pdf "Galfit User's Manual")
